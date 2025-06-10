@@ -1,0 +1,4 @@
+examples\ExamplesTest.class
+ConduitApp\ConduitTest.class
+features\TestRunner.class
+examples\users\UsersRunner.class

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: ConduitApp/feature/HomePage.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>ConduitApp</td>
+      <td>09 jun 2025, 18:14</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">ConduitApp/feature/HomePage.feature</td>
+          <td      class="passed"    >7</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">7</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="746082900">0.746</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">ConduitApp/feature/HomePage.feature</span>
+
+
+</div>
+
+        <div class="description indention"></div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.001</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>18:14:00.175 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2045266612.html">@ValidarElResponse</a>
+</div>
+
+
+  <span class="lead-duration duration">0.744</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Validar la estructura del response</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def timeValidator = read('classpath:helpers/TimeValidator.js')</span>
+
+  <span class="lead-duration duration">0.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params {offset: 0, limit: 10}</span>
+
+  <span class="lead-duration duration">0.027</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.648</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>18:14:00.449 request:
+1 &gt; GET https://conduit-api.bondaracademy.com/api/articles?offset=0&amp;limit=10
+1 &gt; Host: conduit-api.bondaracademy.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.3)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:14:00.888 response time in milliseconds: 431
+1 &lt; 200
+1 &lt; x-powered-by: Express
+1 &lt; vary: Origin
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; etag: W/&quot;43a5-hpRN8vXsd5xnJ9sCoIqqRxXGX8w&quot;
+1 &lt; x-cloud-trace-context: 489588f4741fdba5b4502d18b30b00bc;o=1
+1 &lt; date: Mon, 09 Jun 2025 23:14:00 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 17317
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;Discover-Bondar-Academy:-Your-Gateway-to-Efficient-Learning-1&quot;,&quot;title&quot;:&quot;Discover Bondar Academy: Your Gateway to Efficient Learning&quot;,&quot;description&quot;:&quot;Discover Bondar Academy's unique place in the educational landscape, where value-focused and efficient learning approaches converge. Our goal is to rapidly enhance your professional technical skills, boosting your market competitiveness and paving the way for higher-paying job opportunities. The speed of your progress is in your hands &ndash; you set the pace, and we provide the solutions and support to help you achieve your desired outcomes.&quot;,&quot;body&quot;:&quot;Bondar Academy is a leading platform for efficient education, designed to boost your technical skills and advance your career in Quality Assurance (QA). Our program features a balanced mix of pre-recorded lectures and live sessions, allowing each student to study at their own pace and at a time that suits them. \n\nOur instructors are readily available on our Slack Workspace for support. Whether it's a quick question or a more complex issue requiring a Zoom call or Slack Huddle for screen sharing and live discussion, we're here to assist. Additionally, each class comes with a comprehensive question bank for self-assessment. Following each lecture, you have the opportunity to validate your understanding and readiness to progress to the next topic. You set the pace, and we provide the solutions to ensure you achieve your desired outcomes.\n\nSignUp today: https://www.bondaracademy.com&quot;,&quot;tagList&quot;:[&quot;qa career&quot;,&quot;Bondar Academy&quot;,&quot;QA Skills&quot;,&quot;Value-Focused&quot;],&quot;createdAt&quot;:&quot;2024-01-27T21:52:32.682Z&quot;,&quot;updatedAt&quot;:&quot;2024-01-27T21:52:32.682Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:669,&quot;author&quot;:{&quot;username&quot;:&quot;Artem Bondar&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://storage.googleapis.com/bondar-academy-visuals/Android.png&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;The-value-of-pre-recorded-video-classes.-The-most-efficient-approach-to-tranfer-the-knowledge-1&quot;,&quot;title&quot;:&quot;The value of pre-recorded video classes. The most efficient approach to tranfer the knowledge&quot;,&quot;description&quot;:&quot;As educational practices evolve, video tutorials have emerged as the most efficient method for imparting theoretical knowledge. At Bondar Academy, we prioritize expertly structured and crafted video tutorials, ensuring you learn quickly and effectively and advance your skills.&quot;,&quot;body&quot;:&quot;At Bondar Academy, we prioritize the value of your time and the efficiency of your education, distinguishing our approach from traditional colleges and live boot camps. Forget long, tedious live lectures on a fixed schedule. With us, you learn at your convenience and pace through optimized, structured video lectures. \n\nWe understand your goal is rapid knowledge acquisition. Our pre-recorded and well-organized lectures are designed precisely for this, ensuring no slowdowns from group dynamics or unrelated instructor anecdotes. \n\nDive straight into the subject matter, learn efficiently, and if questions arise, our immediate support on the Slack Workspace is there to streamline your learning process and swiftly remove any roadblocks.&quot;,&quot;tagList&quot;:[&quot;Bondar Academy&quot;,&quot;Video Lectures&quot;,&quot;Tutorials&quot;],&quot;createdAt&quot;:&quot;2024-01-27T21:50:38.825Z&quot;,&quot;updatedAt&quot;:&quot;2024-01-27T21:50:38.825Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:237,&quot;author&quot;:{&quot;username&quot;:&quot;Artem Bondar&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://storage.googleapis.com/bondar-academy-visuals/Android.png&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Mastering-Knowledge-with-Self-Assessments:-Identifying-and-Bridging-Learning-Gaps-in-Education-1&quot;,&quot;title&quot;:&quot;Mastering Knowledge with Self-Assessments: Identifying and Bridging Learning Gaps in Education&quot;,&quot;description&quot;:&quot;Self-assessment is an essential tool for gauging your understanding of lecture material. It answers critical questions: Have you grasped everything correctly? Is there anything you've missed? Are you prepared for the next lesson? These assessments ensure that you build a solid foundation of knowledge, confidently and efficiently paving the way for swift progress and effective learning outcomes.&quot;,&quot;body&quot;:&quot;Traditional educational institutions, such as colleges and universities, commonly use tests and assessments to measure knowledge. This approach is effective for gauging student performance, but it's not without drawbacks. In these settings, assessments after every lecture aren't feasible due to the time required for teachers to evaluate them. This often leads to students having a false sense of understanding, believing they've comprehended all aspects of a lecture when, in reality, small but crucial details might be missed. These 'knowledge gaps' can accumulate, making more complex topics difficult to grasp later on.\n\nAt Bondar Academy, we address this challenge by implementing self-assessments after every lecture. These are designed to cover key questions that ensure a thorough understanding of the material, essential for comfort and success in future lectures. The number of questions varies, ranging from 3-4 to 15-20, depending on the lecture's significance and the volume of critical information. With these self-assessments, students receive immediate feedback, helping them determine if they've fully understood the lecture or if they need to revisit certain parts or seek assistance from our instructors in the Slack Workspace.&quot;,&quot;tagList&quot;:[&quot;Self-Assessment&quot;,&quot;Test&quot;,&quot;Exam&quot;],&quot;createdAt&quot;:&quot;2024-01-27T21:48:36.340Z&quot;,&quot;updatedAt&quot;:&quot;2024-01-27T21:48:36.340Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:57,&quot;author&quot;:{&quot;username&quot;:&quot;Artem Bondar&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://storage.googleapis.com/bondar-academy-visuals/Android.png&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Practical-Implementation-of-Skills:-Homework-Assignments-with-Instructor-Supervision-1&quot;,&quot;title&quot;:&quot;Practical Implementation of Skills: Homework Assignments with Instructor Supervision&quot;,&quot;description&quot;:&quot;Knowledge or skills not reinforced through practical exercises can quickly fade, often faster than anticipated. Homework, particularly in tasks like writing your own code, is crucial for honing these skills and cementing your understanding. At Bondar Academy, we ensure this vital step by assigning homework, rigorously evaluating the outcomes, and providing valuable feedback to guide your learning journey.&quot;,&quot;body&quot;:&quot;Homework assignments are a fundamental component of the educational methodology at Bondar Academy, especially in technical education where learning a new programming language or framework is involved. The key to mastering these skills lies in writing code; the more you write, the better you become. However, merely replicating code seen in lectures leads to minimal learning. Often, this approach leaves students unclear about why their code works the way it does, as they focus on copying rather than understanding.\n\nA homework assignment at Bondar Academy starts with a blank page, challenging students to apply all their knowledge to write the first line of code. This process is more demanding than it appears. As you write each line, understanding and reasoning grow, making your code meaningful and comprehensible. You learn to write code that makes sense to you, enhancing your understanding.\n\nIn completing these assignments, you engage the 'thinking' part of your brain, transforming theoretical knowledge into practical skills. Recognizing the crucial role of homework in learning, our instructors at Bondar Academy are always available to assist with any challenges. Just reach out on Slack, and you'll receive the guidance and support needed for successful completion. At Bondar Academy, we fully understand the importance of homework assignments for the best outcome, so our instructors are always here to assist if you have any difficulties with completing them. Just ask in Slack and you'll be guided and assisted.&quot;,&quot;tagList&quot;:[&quot;Homework&quot;,&quot;Assignments&quot;,&quot;Practice&quot;,&quot;Coding&quot;],&quot;createdAt&quot;:&quot;2024-01-27T21:46:09.512Z&quot;,&quot;updatedAt&quot;:&quot;2024-01-27T21:46:09.512Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:32,&quot;author&quot;:{&quot;username&quot;:&quot;Artem Bondar&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://storage.googleapis.com/bondar-academy-visuals/Android.png&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Embracing-Daily-Git-Routines:-Real-Code-Reviews-on-GitHub-for-Effective-Coding-Practice.-1&quot;,&quot;title&quot;:&quot;Embracing Daily Git Routines: Real Code Reviews on GitHub for Effective Coding Practice.&quot;,&quot;description&quot;:&quot;Learning to code is just one part of a larger skill set; effectively managing and organizing code is equally crucial. At Bondar Academy, we integrate Git and platforms like GitHub into the core learning cycle. With us, using Git becomes a regular routine, where organizing code in branches, storing it in remote repositories, and collaborating with others through strategies like branching, merging, pull requests, and code reviews are standard practice.&quot;,&quot;body&quot;:&quot;At Bondar Academy, mastering Git and GitHub is a fundamental step before delving into frameworks or programming languages. Effective code management, organization, and storage are crucial skills, and Git is the premier tool for this purpose. However, many learners initially find Git challenging due to its complexity and non-intuitive nature. To address this, our instructors have developed structured lectures on Git and GitHub, ensuring an efficient and thorough understanding of these essential tools. Git lessons are a mandatory prerequisite in every class. For a glimpse into our teaching approach, visit our YouTube channel: https://www.youtube.com/@BondarAcademy/playlists.\n\nIn our courses, all homework assignments are reviewed using GitHub pull requests, mirroring the workflow in real-world software development environments. Students submit their code to their working branch for review. Our instructors then provide feedback, suggesting modifications or adjustments for pull request approval. This iterative process is repeated throughout the course, establishing Git usage as a natural and routine part of your coding practice.&quot;,&quot;tagList&quot;:[&quot;YouTube&quot;,&quot;Git&quot;,&quot;GitHub&quot;],&quot;createdAt&quot;:&quot;2024-01-27T21:42:31.491Z&quot;,&quot;updatedAt&quot;:&quot;2024-01-27T21:42:31.491Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:26,&quot;author&quot;:{&quot;username&quot;:&quot;Artem Bondar&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://storage.googleapis.com/bondar-academy-visuals/Android.png&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Engaging-in-Live-Zoom-Sessions:-Interact-with-Instructors-and-Peers-Ask-Questions-in-Real-Time-1&quot;,&quot;title&quot;:&quot;Engaging in Live Zoom Sessions: Interact with Instructors and Peers, Ask Questions in Real-Time&quot;,&quot;description&quot;:&quot;In our increasingly online world, personal engagement remains a crucial element of effective learning. At Bondar Academy, we address this by hosting live Zoom sessions. These sessions provide a platform for live interaction between instructors and students, and among students themselves. Complementing our Slack channel, these live sessions offer an additional avenue for asking questions and engaging in meaningful discussions.&quot;,&quot;body&quot;:&quot;In our increasingly online world, personal engagement remains a crucial element of effective learning. \nAt Bondar Academy, we address this by hosting live Zoom sessions. These sessions provide a platform for live interaction between instructors and students and among students themselves. Complementing our Slack channel, these live sessions offer an additional avenue for asking questions and engaging in meaningful discussions.&quot;,&quot;tagList&quot;:[&quot;Zoom&quot;,&quot;Live Sessions&quot;],&quot;createdAt&quot;:&quot;2024-01-27T21:39:50.587Z&quot;,&quot;updatedAt&quot;:&quot;2024-01-27T21:39:50.587Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:19,&quot;author&quot;:{&quot;username&quot;:&quot;Artem Bondar&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://storage.googleapis.com/bondar-academy-visuals/Android.png&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Utilizing-Slack-for-Continuous-Engagement:-Connect-with-Instructors-Share-Insights-and-Collaborate-1&quot;,&quot;title&quot;:&quot;Utilizing Slack for Continuous Engagement: Connect with Instructors, Share Insights, and Collaborate&quot;,&quot;description&quot;:&quot;Slack stands out as a widely-used messaging and collaboration platform, celebrated for its convenience and versatility. It enables simultaneous participation in multiple conversations, supports comments and emoji reactions, and allows users to share screenshots, videos, and code snippets. Its functionality extends to making calls in huddle sessions. Given these robust features, Bondar Academy has chosen Slack as our primary communication platform, facilitating seamless interaction and collaboration.&quot;,&quot;body&quot;:&quot;As a new member of Bondar Academy, one of your initial steps should be registering for the Bondar Academy Slack Workspace. Upon registration at Bondar Academy, you'll receive a welcome email containing the URL to join. This Workspace serves as a central hub for communication with instructors and fellow students. Whether you have a question, need to share code, or want to upload screenshots, Slack makes it easy and efficient. Moreover, its compatibility with both desktop and mobile devices, by downloading and installing the app, ensures you can stay connected with your instructors and the community wherever you go.&quot;,&quot;tagList&quot;:[&quot;Slack&quot;,&quot;Community&quot;,&quot;Collaboration&quot;],&quot;createdAt&quot;:&quot;2024-01-27T21:38:27.992Z&quot;,&quot;updatedAt&quot;:&quot;2024-01-27T21:38:27.992Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:19,&quot;author&quot;:{&quot;username&quot;:&quot;Artem Bondar&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://storage.googleapis.com/bondar-academy-visuals/Android.png&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Stay-Ahead-with-Bondar-Academy:-Subscribe-to-Our-YouTube-channel-for-Latest-Tech-and-Education-Updates-1&quot;,&quot;title&quot;:&quot;Stay Ahead with Bondar Academy: Subscribe to Our YouTube channel for Latest Tech and Education Updates&quot;,&quot;description&quot;:&quot;Who doesn't appreciate high-quality free resources? YouTube serves as an ideal platform for sharing the latest news, updates, and a wealth of tips and tricks in test automation and technology. Keep abreast of these invaluable insights by subscribing to the @bondaracademy YouTube channel.&quot;,&quot;body&quot;:&quot;Who doesn't appreciate high-quality free resources? \n\nYouTube serves as an ideal platform for sharing the latest news, updates, and a wealth of tips and tricks in test automation and technology. \n\nKeep abreast of these invaluable insights by subscribing to our YouTube channel: https://www.youtube.com/@bondaracademy&quot;,&quot;tagList&quot;:[&quot;YouTube&quot;],&quot;createdAt&quot;:&quot;2024-01-27T21:36:32.360Z&quot;,&quot;updatedAt&quot;:&quot;2024-01-27T21:36:32.360Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:19,&quot;author&quot;:{&quot;username&quot;:&quot;Artem Bondar&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://storage.googleapis.com/bondar-academy-visuals/Android.png&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Explore-the-Latest-in-Learning:-Bondar-Academy-Blog's-Educational-Insights-from-Our-Experts-1&quot;,&quot;title&quot;:&quot;Explore the Latest in Learning: Bondar Academy Blog's Educational Insights from Our Experts&quot;,&quot;description&quot;:&quot;Discover a treasure trove of knowledge on the Bondar Academy blog. Here, we share an array of tips, techniques, and valuable educational materials, all designed to keep you abreast of the latest technological trends and best practices. For easy access and continual learning, consider bookmarking our blog in your browser.&quot;,&quot;body&quot;:&quot;On the Bondar Academy blog, we consistently provide insightful and pertinent updates on the latest in technology, test automation, and industry best practices. For your convenience, we recommend adding our blog to your browser's bookmarks. Our commitment to keeping you informed is reflected in our weekly posts, each focusing on a significant topic of the week.\n\nWe value your input and invite you to contribute to our ever-evolving content. If you have any suggestions or specific topics you'd like us to explore, please feel free to share your ideas in the Bondar Academy Slack workspace. \n\nDiscover our blog here: https://www.bondaracademy.com/blog\n&quot;,&quot;tagList&quot;:[&quot;Blog&quot;],&quot;createdAt&quot;:&quot;2024-01-27T21:34:04.531Z&quot;,&quot;updatedAt&quot;:&quot;2024-01-27T21:34:04.531Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:21,&quot;author&quot;:{&quot;username&quot;:&quot;Artem Bondar&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://storage.googleapis.com/bondar-academy-visuals/Android.png&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Take-the-Next-Step:-Join-Bondar-Academy-Today-and-Enroll-into-the-class-1&quot;,&quot;title&quot;:&quot;Take the Next Step: Join Bondar Academy Today and Enroll into the class&quot;,&quot;description&quot;:&quot;Are you prepared to transform your educational journey? Begin by signing up at Bondar Academy, then register for our Slack Workspace to start exploring. We offer a range of classes, with some being completely free and others featuring free previews of the initial sections. This allows you to experience our content and teaching approach firsthand, helping you make an informed decision before enrolling in a class.&quot;,&quot;body&quot;:&quot;Are you prepared to transform your educational journey? \n\nBegin by signing up at Bondar Academy, then register for our Slack Workspace to start exploring. We offer a range of classes, with some being completely free and others featuring free previews of the initial sections. This allows you to experience our content and teaching approach firsthand, helping you make an informed decision before enrolling in a class.\n\nClick here to enroll: https://www.bondaracademy.com&quot;,&quot;tagList&quot;:[&quot;Enroll&quot;,&quot;Start for Free&quot;],&quot;createdAt&quot;:&quot;2024-01-27T21:32:21.056Z&quot;,&quot;updatedAt&quot;:&quot;2024-01-27T21:32:21.056Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:22,&quot;author&quot;:{&quot;username&quot;:&quot;Artem Bondar&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://storage.googleapis.com/bondar-academy-visuals/Android.png&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:10}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match each response.articles ==</span>
+
+  <span class="lead-duration duration">0.051</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>{
+  &quot;slug&quot;: &quot;#string&quot;,
+  &quot;title&quot;: &quot;#string&quot;,
+  &quot;description&quot;: &quot;#string&quot;,
+  &quot;body&quot;: &quot;#string&quot;,
+  &quot;tagList&quot;: &quot;#array&quot;,
+  &quot;createdAt&quot;: &quot;#? timeValidator(_)&quot;,
+  &quot;updatedAt&quot;: &quot;#? timeValidator(_)&quot;,
+  &quot;favorited&quot;: &quot;#boolean&quot;,
+  &quot;favoritesCount&quot;: &quot;#number&quot;,
+  &quot;author&quot;: {
+    &quot;username&quot;: &quot;#string&quot;,
+    &quot;bio&quot;: &quot;##string&quot;,
+    &quot;image&quot;: &quot;##string&quot;,
+    &quot;following&quot;: &quot;#boolean&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

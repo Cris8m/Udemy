@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: ConduitApp.ConduitTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.008 s <<< FAILURE! - in ConduitApp.ConduitTest
+ConduitApp.ConduitTest.testParallel  Time elapsed: 9.98 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 422, expected: 201, response time in milliseconds: 395, url: https://conduit-api.bondaracademy.com/api/articles, response: 
+{"errors":{"title":["must be unique"]}}
+classpath:ConduitApp/feature/Articles.feature:18
+match failed: CONTAINS_ONLY
+  $ | actual does not contain expected | actual array length is not equal to expected - 10:2 (LIST:LIST)
+  ["Test","YouTube","Zoom","Bondar Academy","Git","Blog","qa career","QA Skills","Value-Focused","GitHub"]
+  ["YouTube","Zoom"]
+
+
+classpath:ConduitApp/feature/HomePage.feature:27
+status code was: 422, expected: 201, response time in milliseconds: 458, url: https://conduit-api.bondaracademy.com/api/users, response: 
+{"errors":{"email":["has already been taken"],"username":["has already been taken"]}}
+classpath:ConduitApp/feature/Signup.feature:22 ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at ConduitApp.ConduitTest.testParallel(ConduitTest.java:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
